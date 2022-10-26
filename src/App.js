@@ -7,14 +7,17 @@ import { Config, DivBody } from './style/Styled';
 
 function App() {
   return (
-      <Config>
+    <div>
 
-      <Header/>
-      <MainRoutes/>
-      <Footer/>
-      </Config>
- 
-      
+
+      <Header />
+      <MainRoutes />
+     
+    </div>
+
+
+
+
   );
 }
 

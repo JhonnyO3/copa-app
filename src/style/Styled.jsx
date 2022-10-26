@@ -1,23 +1,52 @@
 import React from "react";
 import styled from "styled-components";
 
+export const DivFlex = styled.div`
+display: flex;
 
+img {
+   width: 600px;
+   margin-left: 100px;
+}
+`
 export const DivHome = styled.div`
 font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
+background-color: #383838;
+color: white;
 .principal{
    font-size: 20px;
-   text-align: center;
-   padding-top: 20px;
+   max-width: 45%;
+   padding-top: 150px;
+   margin-left: 100px;
+   max-height: 100px;
+
 }
+.principal button {
+   color: black;
+   padding: 15px;
+   font-style: bold;
+   font-size: 20px;
+   background-color: #FFF915;
+   border-radius: 10px;
+   margin: 5px;
+   border: 10px;
+}
+
 .principal p {
    padding-top: 20px;
+   font-size: 20px;
+   margin-bottom: 10px;
+   
+}
+.principal h1{
+   color: #FFF915;
 }
 .alinhaCards {
    display: flex;
    background-color: #126E51;
    padding: 100px;
    border-radius: 10px;
+   color: black;
 }
 .cards{
    h2{
@@ -63,7 +92,7 @@ font-size: 30px;
 text-align: right;
 position: absolute;
 width: 100%;
-padding-bottom: 200px;
+
 font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
 
@@ -75,7 +104,7 @@ form{
 fieldset{
    background-color: #FFF915;
    padding-top: 140px;
-   padding-bottom: 290px;
+   padding-bottom: 478px;
    padding-left: 300px;
    padding-right: 200px;
 

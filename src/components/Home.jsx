@@ -1,18 +1,27 @@
 import React from "react";
 import { Carousel, CarouselItem } from "react-bootstrap";
-import { DivHome } from "../style/Styled";
+import { DivFlex, DivHome } from "../style/Styled";
+import neymar from "../img/neymar.png"
 
 export default function Home() {
     return(
         <DivHome>
+            <DivFlex>
+
             <div className="principal">
-            <h1>Seja bem vindo ao figurinhas Copa!</h1>
+            <h1>O guia oficial Panini das figurinhas da copa!</h1>
             <p>Somos um site que trás em primeira mão todas as informações relevantes para você completar seu album da copa do mundo! </p>
             <p>Trazemos em primeira mão toda a coleção de figurinhas dos maiores jogadores do mundo, e também suas edições passadas!</p>
             <p>Veja só nosso guia!</p>
+            <button>Guia de figurinhas</button>
             </div>
-            <div className="alinhaCards">
 
+            <div className="imageNey">
+                <img src={neymar} alt="" />
+            </div>
+            </DivFlex>
+
+            <div className="alinhaCards">
 
             <div className="cards">
                 <h2>Album da copa de 2022</h2>
