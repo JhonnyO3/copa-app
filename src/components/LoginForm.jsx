@@ -11,8 +11,9 @@ export default function LoginForm() {
     const [usuario, setUsuario] = useState({
         login: "",
         senha: "",
-        rm: ""
-       
+        rm: "",
+        nome: ""
+
     })
 
     const handleChange = e => {
@@ -32,7 +33,7 @@ export default function LoginForm() {
     }, [])*/
 
 
-    
+
     const logar = async (e) => {
         e.preventDefault()
         const requestOptions = {
@@ -46,9 +47,10 @@ export default function LoginForm() {
         )
 
         const data = await response.json()
-        
+
         if (data.login) {
-            sessionStorage.setItem("usuario-validado", data.rm)
+            sessionStorage.setItem("usuario-validado", data.login)
+            sessionStorage.setItem("usuarioObject", JSON.stringify(data))
         }
 
         if (data) {
@@ -61,45 +63,32 @@ export default function LoginForm() {
     return (
 
         <div>
-    
+
             <DivForm>
                 <form onSubmit={logar} >
-                    <fieldset>
-                        <div className="formulario">
-                            <div>
-                            <legend>Realize seu Login</legend>
-
-                                <label>RM</label>
-                                <input
-                                    type="text"
-                                    name="rm"
-                                    placeholder="   RM"
-                                    value={usuario.rm}
-                                    onChange={handleChange} /> 
-                            </div>
-
-                            <div>
-                                <label>Login</label>
+                    <div className="formulario">
+                        <div>
+                            <label>E-mail
                                 <input
                                     type="text"
                                     name="login"
-                                    placeholder="   Login"
+                                    placeholder="   Insira seu Login cadastrado"
                                     value={usuario.login}
                                     onChange={handleChange} />
-                            </div>
-                            <div>
-                                <label>Senha</label>
-                                <input type="password"
-                                    name="senha"
-                                    placeholder="   Senha"
-                                    value={usuario.senha}
-                                    onChange={handleChange} />
-                            </div>
-                            <div>
-                                <button>Enviar</button>
-                            </div>
+                            </label>
                         </div>
-                    </fieldset>
+                        <div>
+                            <label>Senha</label>
+                            <input type="password"
+                                name="senha"
+                                placeholder="   Insira sua Senha"
+                                value={usuario.senha}
+                                onChange={handleChange} />
+                        </div>
+                        <div>
+                            <button>Enviar</button>
+                        </div>
+                    </div>
                 </form>
             </DivForm>
         </div>

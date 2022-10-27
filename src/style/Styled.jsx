@@ -17,6 +17,9 @@ h1 {
    max-width: 50%;
 
 }
+h3{
+   color: white;
+}
 span {
    color: white;
    font-style: italic;
@@ -165,53 +168,46 @@ export const DivBody = styled.body`
 
 `
 export const DivForm = styled.div`
-background-color: #3549e1;
-padding: 0;
-margin: 0;
-font-size: 30px;
-text-align: right;
-position: absolute;
-width: 100%;
-
 font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+display: block;
+width: 1000px;
+justify-content: end;
+margin-left: 47%;
+color: white;
 
 
 form{
-   display: inline-block;
-   position: relative;
-   justify-content: right;
+   width: 1015px;
+   background-color: #3d53e3;
+   padding-bottom: 324px;
+   
 }
-fieldset{
-   background-color: #fff705;
-   padding-top: 140px;
-   padding-bottom: 478px;
-   padding-left: 300px;
-   padding-right: 200px;
 
+.formulario {
+   font-size: 40px;
+   font-weight: bold;
+   padding-left: 250px;
+   padding-top: 200px;
 
-}
-input{
+   input{
+      size: 40px;
+      width: 600px;
+      height:60px;
+      display: block;  
+      margin-top: 10px;
+   }
+   button{
+      margin-top: 30px;
+      font-weight: bold;
+      width: 600px;
+      height: 60px;
+      border-radius: 30px;
+      background-color: #FFF915;
+      box-shadow: none;
+      font-size: 25px;
+    
+   }
 
-
-   margin-left: 20px;
-   margin-top: 20px;
-   border-radius: 20px;
-
-   width: 400px;
-   height: 50px;
-}
-label {
-   color: black;
-}
-button {
-   color: white;
-   font-style: bold;
-   font-size: 20px;
-   width: 100%;
-   background-color: #126E51;
-   border-radius: 10px;
-   margin: 5px;
-   border: 10px;
 }
 
 `

@@ -10,7 +10,7 @@ export default function Header() {
     window.location = "/"
     }
 
-    const usuario = sessionStorage.getItem("usuario-validado")
+    const verificar = sessionStorage.getItem("usuario-validado")
 
     return(
         <DivBody>        
@@ -21,7 +21,7 @@ export default function Header() {
                 <li><Link to="/figurinhasNacionais">Figurinhas Nacionais</Link></li>
                 <li><Link to="/figurinhasInternacionais">Figurinhas Internacionais</Link></li>
                 <li className="liLogin"><Link to="/login" className="login">Login</Link></li>
-                <li><button onClick={logout}>Sair</button></li>
+                <li><button style={verificar ? {display:"inline"}: {display:"none"}} onClick={logout}> Sair </button></li>
             </ul>
        </DivHeader>
         </DivBody>

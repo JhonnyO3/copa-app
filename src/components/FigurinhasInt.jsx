@@ -4,25 +4,9 @@ import { DivFigurinhas, DivHome } from "../style/Styled";
 
 export default function FigurinhasInt() {
     const verificar = sessionStorage.getItem("usuario-validado")
+    const usuario = JSON.parse(sessionStorage.getItem("usuarioObject"))
 
-    const [usuario, setUsuario] = useState({
-        login: "",
-        nome: "",
-        senha: "",
-        rm: ""
-    })
-
-    useEffect(() => {
-        fetch(`http://localhost:8080/CopaApp/rest/login/${verificar}`).then((resp) => {
-            return resp.json();
-        }).then((resp) => {
-            setUsuario(resp)
-            console.log(resp)
-        }).catch((error) => {
-            console.log(error)
-        })
-
-    }, [])
+   
 
     useEffect(() => {
         if (verificar == null) {
@@ -34,7 +18,9 @@ export default function FigurinhasInt() {
     return (
         <div>
             <DivFigurinhas>
-                <h1>Olá <span>{usuario?.nome}</span> seja bem vindo a sua area!</h1>
+                <h1>Olá <span>{usuario.nome}</span> seja bem vindo a sua area!</h1>
+                <h3>Dados de login: {usuario.login}</h3>
+                <h3>RM: {usuario.rm}</h3>
                 <p>Nessa página você tem acesso as top 10º figurinhas Internacionais do album da copa 2022!</p>
 
 
