@@ -40,15 +40,10 @@ p{
    max-width: 90%;
 }
 .cards{
-   h2{
-      text-align: center;
-      padding-top: 20px;
-      padding-bottom:20px ;
-      padding: 40px;
-   }
    background-color: #FFF915;
-   padding-bottom: 100px;
-   padding-left: 10px;
+   padding-bottom: 20px;
+   padding-left: 20px;
+   padding-right: 20px;
    margin: 15px;
    border-radius: 5px;
    p{
@@ -57,17 +52,13 @@ p{
    }
 
    img{
-      padding-top: 30px;
+      padding-top: 20px;
       max-width: 300px;
       margin: 0 auto;
-      margin-left: 50px;
-      padding-bottom: 40px;
-
+      padding-bottom: 0px;
+      max-height: 300px;
    }
 }
-
-
-
 
 `
 
@@ -130,6 +121,7 @@ color: white;
    padding-left: 10px;
    margin: 15px;
    border-radius: 5px;
+   border-color: green;
 
    img{
       padding-top: 30px;
@@ -297,10 +289,7 @@ export const DivHeader = styled.header`
       padding-right: 15px;
       padding-top: 2px;
       padding-bottom: 2px;
-    }
-
-  
-    
-    `
+    }   
+`
 
 
