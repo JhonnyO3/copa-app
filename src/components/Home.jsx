@@ -18,7 +18,7 @@ export default function Home() {
             <DivFlex>
 
             <div className="principal">
-            <h1>O guia oficial Panini das figurinhas da copa!</h1>
+            <h1>O Guia Oficial Panini das Figurinhas da Copa!</h1>
             <p>Somos um site que trás em primeira mão todas as informações relevantes para você completar seu album da copa do mundo! </p>
             <p>Trazemos em primeira mão toda a coleção de figurinhas dos maiores jogadores do mundo, e também suas edições passadas! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ad enim consequatur omnis molestiae doloribus, vel doloremque laboriosam, consectetur sunt laudantium! Sed magni necessitatibus repellat reiciendis? Repudiandae accusantium necessitatibus molestiae.</p>
             <p>Veja só nosso guia!</p>
