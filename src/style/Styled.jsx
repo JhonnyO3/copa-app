@@ -12,8 +12,15 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubun
 padding: 30px;
 padding-top: 60px;
 h1 {
-   font-size: 70px;
+   font-size: 60px;
    color: #FFF915;
+   max-width: 50%;
+
+}
+span {
+   color: white;
+   font-style: italic;
+   
 }
 p{
    font-size: 35px;
@@ -265,6 +272,17 @@ export const DivHeader = styled.header`
       position: relative;
       display: inline;
       margin: 10px 20px 0 15px;
+
+    button {
+      color: black;
+      background-color: #FFF915;
+      border-radius: 3px;
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-top: 2px;
+      padding-bottom: 2px;
+      font-size: 25px;
+   }
      
       
     }

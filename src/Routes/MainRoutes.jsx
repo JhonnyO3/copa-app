@@ -10,7 +10,7 @@ export default function MainRoutes() {
         <Routes>
             <Route path="/" element={<Home/>}/>
             <Route path="/login" element={<LoginForm/>}/>  
-            <Route path="/figurinhas" element={<FigurinhasNac/>}/>     
+            <Route path="/figurinhasNacionais" element={<FigurinhasNac/>}/>     
             <Route path="/figurinhasInternacionais" element={<FigurinhasInt/>}/>     
        </Routes>
 

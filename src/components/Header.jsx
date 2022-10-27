@@ -5,10 +5,10 @@ import { DivBody, DivFoooter, DivHeader, Divzero } from "../style/Styled";
 
 export default function Header() {
 
-    /*const logout = ()=>{
+    const logout = ()=>{
     sessionStorage.removeItem("usuario-validado")
     window.location = "/"
-    }*/
+    }
 
     const usuario = sessionStorage.getItem("usuario-validado")
 
@@ -21,7 +21,7 @@ export default function Header() {
                 <li><Link to="/figurinhasNacionais">Figurinhas Nacionais</Link></li>
                 <li><Link to="/figurinhasInternacionais">Figurinhas Internacionais</Link></li>
                 <li className="liLogin"><Link to="/login" className="login">Login</Link></li>
-                <li><button onClick={""}>{usuario} Sair</button></li>
+                <li><button onClick={logout}>Sair</button></li>
             </ul>
        </DivHeader>
         </DivBody>
