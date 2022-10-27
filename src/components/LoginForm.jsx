@@ -10,9 +10,8 @@ export default function LoginForm() {
 
     const [usuario, setUsuario] = useState({
         login: "",
-        senha: "",
-        rm: "",
-        nome: ""
+        senha: ""
+  
 
     })
 
