@@ -38,15 +38,15 @@ export default function FigurinhasInt() {
 
                 <div className="alinhaCards">
                     <div className="cards">
-                        <h2>Nome Figurinha</h2>
+                        <h2>Cristiano Ronaldo</h2>
                         <p><img src={cr7} alt="" srcset="" /></p>
                     </div>
                     <div className="cards">
-                        <h2>Nome Figurinha</h2>
+                        <h2>Lionel Messi</h2>
                         <p><img src={messi} alt="" srcset="" /></p>
                     </div>
                     <div className="cards">
-                        <h2>Nome Figurinha</h2>
+                        <h2>Phil</h2>
                         <p><img src={phil} alt="" srcset="" /></p>
                     </div>
                     <div className="cards">
