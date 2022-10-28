@@ -15,7 +15,7 @@ export default function Header() {
     return(
         <DivBody>        
         <DivHeader>
-            <Link to="/"><h1>Figurinhas <span>Copa</span> </h1></Link>
+            <Link to="/"><h1>FIAP na <span>Copa</span> </h1></Link>
             <ul>
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/figurinhasNacionais">Figurinhas Nacionais</Link></li>

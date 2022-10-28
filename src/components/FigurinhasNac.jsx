@@ -21,6 +21,7 @@ export default function FigurinhasNac() {
 
     useEffect(() => {
         if (verificar == null) {
+            alert("Você precisa estar logado para acessar!")
             window.location = "/"
         }
     }, [])

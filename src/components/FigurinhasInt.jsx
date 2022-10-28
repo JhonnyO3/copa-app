@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { DivFigurinhas, DivHome } from "../style/Styled";
+import { DivFigurinhas, DivFigurinhasInt, DivHome } from "../style/Styled";
 import cr7 from "../img/cr7.jpg"
 import messi from "../img/messi.jpg"
 import phil from "../img/phil.webp"
@@ -22,6 +22,7 @@ export default function FigurinhasInt() {
 
     useEffect(() => {
         if (verificar == null) {
+            alert("Você precisa estar logado para acessar!")
             window.location = "/"
         }
     }, [])
@@ -29,7 +30,7 @@ export default function FigurinhasInt() {
 
     return (
         <div>
-            <DivFigurinhas>
+            <DivFigurinhasInt>
                 <h1>Olá <span>{usuario.nome}</span> seja bem vindo a sua area!</h1>
                 <h3>Dados de login: {usuario.login}</h3>
                 <h3>RM: {usuario.rm}</h3>
@@ -44,7 +45,6 @@ export default function FigurinhasInt() {
                         <p><img src={messi} alt="" /></p>
                     </div>
                     <div className="cards">
-                        <h2>Phil</h2>
                         <p><img src={phil} alt=""  /></p>
                     </div>
                     <div className="cards">
@@ -69,7 +69,7 @@ export default function FigurinhasInt() {
                         <p><img src={kevinBryune} alt=""  /></p>
                     </div>
                 </div>
-            </DivFigurinhas>
+            </DivFigurinhasInt>
         </div>
     )
 }
