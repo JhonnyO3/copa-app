@@ -4,12 +4,12 @@ import cr7 from "../img/cr7.jpg"
 import messi from "../img/messi.jpg"
 import phil from "../img/phil.webp"
 import seila from "../img/seila.jpg"
-import neymarextra from "../img/neymarextra.webp"
+import messiExtra from "../img/messiExtra.jpg"
 import kamal from "../img/kamal.jpg"
 import hasan from "../img/hasan.jpg"
 import mbappe from "../img/mbappe.jpeg"
-import mbappeNormal from "../img/mbappeNormal.jpg"
-import neymar from "../img/neymar.png"
+import heung from "../img/heung.jpg"
+import kevinBryune from "../img/kevinBryune.webp"
 
 
 
@@ -38,11 +38,9 @@ export default function FigurinhasInt() {
 
                 <div className="alinhaCards">
                     <div className="cards">
-                        <h2>Cristiano Ronaldo</h2>
-                        <p><img src={cr7} alt="" /></p>
+                        <p><img src={cr7} alt="" className="figCr7"/></p>
                     </div>
                     <div className="cards">
-                        <h2>Lionel Messi</h2>
                         <p><img src={messi} alt="" /></p>
                     </div>
                     <div className="cards">
@@ -50,32 +48,25 @@ export default function FigurinhasInt() {
                         <p><img src={phil} alt=""  /></p>
                     </div>
                     <div className="cards">
-                        <h2>Nome Figurinha</h2>
                         <p><img src={seila} alt=""  /></p>
                     </div>
                     <div className="cards">
-                        <h2>Neymar Jr Extra</h2>
-                        <p><img src={neymarextra} alt=""  /></p>
+                        <p><img src={messiExtra} alt=""  /></p>
                     </div>
                     <div className="cards">
-                        <h2>Kamal</h2>
                         <p><img src={kamal} alt=""  /></p>
                     </div>
                     <div className="cards">
-                        <h2>Hasan</h2>
                         <p><img src={hasan} alt=""  /></p>
                     </div>
                     <div className="cards">
-                        <h2>Mbappe Extra</h2>
                         <p><img src={mbappe} alt=""  /></p>
                     </div>
                     <div className="cards">
-                        <h2>Mbappe</h2>
-                        <p><img src={mbappeNormal} alt=""  /></p>
+                        <p><img src={heung} alt=""  /></p>
                     </div>
                     <div className="cards">
-                        <h2>Neymar Jr</h2>
-                        <p><img src={neymar} alt=""  /></p>
+                        <p><img src={kevinBryune} alt=""  /></p>
                     </div>
                 </div>
             </DivFigurinhas>
