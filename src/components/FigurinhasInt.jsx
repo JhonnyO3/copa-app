@@ -1,5 +1,17 @@
 import React, { useEffect, useState } from "react";
 import { DivFigurinhas, DivHome } from "../style/Styled";
+import cr7 from "../img/cr7.jpg"
+import messi from "../img/messi.jpg"
+import phil from "../img/phil.jpg"
+import seila from "../img/seila.jpg"
+import neymarextra from "../img/neymarextra.jpg"
+import kamal from "../img/kamal.jpg"
+import hasan from "../img/hasan.jpg"
+import mbappe from "../img/mbappe.jpg"
+import mbappeNormal from "../img/mbappeNormal.jpg"
+import neymar from "../img/neymar.jpg"
+
+
 
 
 export default function FigurinhasInt() {
@@ -27,43 +39,43 @@ export default function FigurinhasInt() {
                 <div className="alinhaCards">
                     <div className="cards">
                         <h2>Nome Figurinha</h2>
-                        <p><img src="" alt="" srcset="" /></p>
+                        <p><img src={cr7} alt="" srcset="" /></p>
                     </div>
                     <div className="cards">
                         <h2>Nome Figurinha</h2>
-                        <p><img src="" alt="" srcset="" /></p>
+                        <p><img src={messi} alt="" srcset="" /></p>
                     </div>
                     <div className="cards">
                         <h2>Nome Figurinha</h2>
-                        <p><img src="" alt="" srcset="" /></p>
+                        <p><img src={phil} alt="" srcset="" /></p>
                     </div>
                     <div className="cards">
                         <h2>Nome Figurinha</h2>
-                        <p><img src="" alt="" srcset="" /></p>
+                        <p><img src={seila} alt="" srcset="" /></p>
                     </div>
                     <div className="cards">
                         <h2>Nome Figurinha</h2>
-                        <p><img src="" alt="" srcset="" /></p>
+                        <p><img src={neymarextra} alt="" srcset="" /></p>
                     </div>
                     <div className="cards">
                         <h2>Nome Figurinha</h2>
-                        <p><img src="" alt="" srcset="" /></p>
+                        <p><img src={kamal} alt="" srcset="" /></p>
                     </div>
                     <div className="cards">
                         <h2>Nome Figurinha</h2>
-                        <p><img src="" alt="" srcset="" /></p>
+                        <p><img src={hasan} alt="" srcset="" /></p>
                     </div>
                     <div className="cards">
-                        <h2>Nome Figurinha</h2>
-                        <p><img src="" alt="" srcset="" /></p>
+                        <h2>Mbappe Extra</h2>
+                        <p><img src={mbappe} alt="" srcset="" /></p>
                     </div>
                     <div className="cards">
-                        <h2>Nome Figurinha</h2>
-                        <p><img src="" alt="" srcset="" /></p>
+                        <h2>Mbappe</h2>
+                        <p><img src={mbappeNormal} alt="" srcset="" /></p>
                     </div>
                     <div className="cards">
-                        <h2>Nome Figurinha</h2>
-                        <p><img src="" alt="" srcset="" /></p>
+                        <h2>Neymar Jr</h2>
+                        <p><img src={neymar} alt="" srcset="" /></p>
                     </div>
                 </div>
             </DivFigurinhas>

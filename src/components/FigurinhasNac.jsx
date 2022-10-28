@@ -11,6 +11,7 @@ import Pedro from "../img/pedro.jpg"
 import GabrielJesus from "../img/gabrieljesus.webp"
 import ThiagoSilva from "../img/thiago.webp"
 import Ederson from "../img/ederson.jpg"
+
 const verificar = sessionStorage.getItem("usuario-validado")
 
 export default function FigurinhasNac() {
