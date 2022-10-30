@@ -1,11 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 
-
-
-
-
-
 export const DivFigurinhas = styled.div`
 
 font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -40,15 +35,10 @@ p{
    max-width: 90%;
 }
 .cards{
-   h2{
-      text-align: center;
-      padding-top: 20px;
-      padding-bottom:20px ;
-      padding: 40px;
-   }
    background-color: #FFF915;
-   padding-bottom: 100px;
-   padding-left: 10px;
+   padding-bottom: 20px;
+   padding-left: 20px;
+   padding-right: 20px;
    margin: 15px;
    border-radius: 5px;
    p{
@@ -57,19 +47,73 @@ p{
    }
 
    img{
-      padding-top: 30px;
+      padding-top: 20px;
       max-width: 300px;
       margin: 0 auto;
-      margin-left: 50px;
-      padding-bottom: 40px;
-
+      padding-bottom: 0px;
+      max-height: 300px;
    }
 }
 
+`
 
+export const DivFigurinhasInt = styled.div`
 
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+padding: 30px;
+padding-top: 60px;
+h1 {
+   font-size: 60px;
+   color: #FFF915;
+   max-width: 50%;
+
+}
+h3{
+   color: white;
+}
+span {
+   color: white;
+   font-style: italic;
+   
+}
+p{
+   font-size: 35px;
+   color: white;
+   max-width: 50%;
+}
+
+.alinhaCards {
+   display: flex;
+   background-color: #383838;
+   color: black;
+   margin-top: 30px;
+   flex-wrap: wrap;
+   max-width: 90%;
+}
+.cards{
+   background-color: #540b11;
+   padding-bottom: 20px;
+   padding-left: 20px;
+   padding-right: 20px;
+   margin: 15px;
+   border-radius: 5px;
+   p{
+      font-size: 25px;
+      color: black;
+   }
+
+   img{
+      padding-top: 20px;
+      max-width: 300px;
+      margin: 0 auto;
+      padding-bottom: 0px;
+      max-height: 300px;
+   }
+}
 
 `
+
+
 
 export const DivFlex = styled.div`
 display: flex;
@@ -130,6 +174,7 @@ color: white;
    padding-left: 10px;
    margin: 15px;
    border-radius: 5px;
+   border-color: green;
 
    img{
       padding-top: 30px;
@@ -218,6 +263,7 @@ font-size: 20px;
 padding-bottom: 0px;
 background-color: #383838;
 color: white;
+border-color: black;
 
 div {
    padding-left: 3rem;
@@ -297,10 +343,7 @@ export const DivHeader = styled.header`
       padding-right: 15px;
       padding-top: 2px;
       padding-bottom: 2px;
-    }
-
-  
-    
-    `
+    }   
+`
 
 

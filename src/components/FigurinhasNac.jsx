@@ -1,6 +1,16 @@
 import React, { useState } from "react";
 import { useEffect } from "react";
 import { DivFigurinhas } from "../style/Styled";
+import ViniJr from "../img/figurinha-vinicius-jr..webp"
+import Paqueta from "../img/paqueta.webp"
+import Fneymar from "../img/figuneymar.webp"
+import Alisson from "../img/alisson.jpg"
+import Antony from "../img/antony.webp"
+import Fred from "../img/fred.webp"
+import Pedro from "../img/pedro.jpg"
+import GabrielJesus from "../img/gabrieljesus.webp"
+import ThiagoSilva from "../img/thiago.webp"
+import Ederson from "../img/ederson.jpg"
 
 const verificar = sessionStorage.getItem("usuario-validado")
 
@@ -11,6 +21,7 @@ export default function FigurinhasNac() {
 
     useEffect(() => {
         if (verificar == null) {
+            alert("Você precisa estar logado para acessar!")
             window.location = "/"
         }
     }, [])
@@ -24,44 +35,34 @@ export default function FigurinhasNac() {
                 <p>Nessa página você tem acesso as top 10º figurinhas Nacionais do album da copa 2022!</p>
                 <div className="alinhaCards">
                     <div className="cards">
-                        <h2>Nome Figurinha</h2>
-                        <p><img src="" alt="" srcset="" /></p>
+                        <p><img src={ViniJr} alt="" className="FiguViniJr"/></p>
                     </div>
                     <div className="cards">
-                        <h2>Nome Figurinha</h2>
-                        <p><img src="" alt="" srcset="" /></p>
+                        <p><img src={Paqueta} alt="" /></p>
                     </div>
                     <div className="cards">
-                        <h2>Nome Figurinha</h2>
-                        <p><img src="" alt="" srcset="" /></p>
+                        <p><img src={Fneymar} alt="" /></p>
                     </div>
                     <div className="cards">
-                        <h2>Nome Figurinha</h2>
-                        <p><img src="" alt="" srcset="" /></p>
+                        <p><img src={Alisson} alt="" /></p>
                     </div>
                     <div className="cards">
-                        <h2>Nome Figurinha</h2>
-                        <p><img src="" alt="" srcset="" /></p>
+                        <p><img src={Antony} alt="" /></p>
                     </div>
                     <div className="cards">
-                        <h2>Nome Figurinha</h2>
-                        <p><img src="" alt="" srcset="" /></p>
+                        <p><img src={Fred} alt="" /></p>
                     </div>
                     <div className="cards">
-                        <h2>Nome Figurinha</h2>
-                        <p><img src="" alt="" srcset="" /></p>
+                        <p><img src={Pedro} alt="" /></p>
                     </div>
                     <div className="cards">
-                        <h2>Nome Figurinha</h2>
-                        <p><img src="" alt="" srcset="" /></p>
+                        <p><img src={GabrielJesus} alt="" /></p>
                     </div>
                     <div className="cards">
-                        <h2>Nome Figurinha</h2>
-                        <p><img src="" alt="" srcset="" /></p>
+                        <p><img src={ThiagoSilva} alt="" /></p>
                     </div>
                     <div className="cards">
-                        <h2>Nome Figurinha</h2>
-                        <p><img src="" alt="" srcset="" /></p>
+                        <p><img src={Ederson} alt="" /></p>
                     </div>
                 </div>
             </DivFigurinhas>

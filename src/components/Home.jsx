@@ -53,7 +53,6 @@ export default function Home() {
                 <p><img src={copa2010} alt="" srcset="" /></p>
             </div>
             </div>
-            <Footer></Footer>
 
 
 
